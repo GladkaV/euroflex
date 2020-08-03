@@ -10,7 +10,83 @@
 </head>
 
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="logo">
+          <img src="./img/logo.svg" alt="">
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Отраслевые решения</a></li>
+            <li><a href="#">Производство</a></li>
+            <li><a href="#">Преимущества</a></li>
+          </ul>
+        </nav>
+        <div class="header__contact">
+          <a class="contact__tel" href="tel:+74951234567">+7 (495) 123-45-67</a>
+          <a class="contact__back-all" href="#">Обратный звонок</a>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="header__content-info">
+          <div class="header__content-text">
+            <span>Еврофлекс</span> - ведущий производитель упаковки для пищевой промышленности и сельского хозяйства
+          </div>
+          <div class="header__advantages">
+            <div class="header__advantages-title">
+              Пленка БОПП с макроперфорацией до 12 отверстий
+            </div>
+            <div class="header__advantages-items">
+              <div class="header__advantages-item production">
+                <img src="./img/advantages-1.png" alt="">
+                <div class="advantages-item__text">
+                  СОБСТВЕННОЕ
+                  ПРОИЗВОДСТВО
+                </div>
+              </div>
+              <div class="header__advantages-item new-clients">
+                <img src="./img/advantages-2.png" alt="">
+                <div class="advantages-item__text">
+                  СУПЕР-УСЛОВИЯ
+                  НОВЫХ КЛИЕНТОВ
+                </div>
+              </div>
+              <div class="header__advantages-item quality">
+                <img src="./img/advantages-3.png" alt="">
+                <div class="advantages-item__text">
+                  КАЧЕСТВО, СКЛАД, 
+                  СРОКИ ПРОИЗВОДСТВА
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- специальное предложение -->
+        <div class="special-offer">
+          <h6 class="special-offer__title">
+            Получите расчет за 15 мин
+            и спецпредложение
+            на первый заказ!
+          </h6>
+          <div class="special-offer__text">
+            Количество спепредложений в рамках месяца ограничено
+          </div>
+          <form>
+            <label>Ваше имя*</label>
+            <input type="text" name="name" placeholder="Петров Петр" required>
+            <label>Ваш номер*</label>
+            <input type="tel" name="tel" placeholder="+7 (___) ___-__-__" required>
+            <button type="submit">Получить СПЕЦПРЕДЛОЖЕНИЕ</button>
+          </form>
+          <div class="special-offer__descr">
+            Мы гарантируем конфиденциальность данных
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
