@@ -1,6 +1,9 @@
 'use strict';
 
 $(function () {
+    new WOW().init({
+        offset: 150,  
+    });
     // slider
     $('.production__slider').slick({
         infinite: true,

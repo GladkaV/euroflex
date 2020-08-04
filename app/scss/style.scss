@@ -136,7 +136,7 @@
     .slick-track {
         display: flex;
         justify-content: space-around;
-        padding: 0 20px;
+        padding: 0 0px;
     }
     .slick-slide {
         outline: none;
@@ -550,12 +550,5 @@
 // end footer
 
 
-
-
 // MEDIA
 @import "media";
-.production__slider {
-    .slick-track {
-        transform: translate3d(0px, 0px, 0px) !important;
-    }
-}
