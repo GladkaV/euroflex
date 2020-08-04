@@ -601,6 +601,37 @@ a {
     background-position: center;
 }
 // end company
+// start advantages
+.advantages {
+    padding: 100px 0 36px;
+}
+.advantages__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+.advantages__item {
+    text-align: center;
+    width: 25%;
+    margin-bottom: 80px;
+
+    img {
+        margin-bottom: 16px;
+    }
+}
+.advantages__item-text {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #444444;
+}
+// end advantages
+
+
+
+
+
 
 
 // MEDIA
