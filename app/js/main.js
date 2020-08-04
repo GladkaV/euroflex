@@ -4,6 +4,12 @@ $(function () {
     new WOW().init({
         offset: 150,  
     });
+
+    // menu btn
+    $('.header__menu-btn').on('click', function () {
+        $('.menu ul').slideToggle();
+    })
+
     // slider
     $('.production__slider').slick({
         infinite: true,

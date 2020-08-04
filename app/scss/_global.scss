@@ -111,6 +111,11 @@ a {
         top: -2px;
     }
 }
+@media(max-width: 460px){
+    .special-offer {
+        padding: 29px 30px 20px;
+    }
+}
 // end special offer
 .title {
     font-weight: 500;

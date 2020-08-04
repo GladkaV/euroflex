@@ -3,3 +3,130 @@
         transform: translate3d(0px, 0px, 0px) !important;
     }
 }
+
+@media(max-width: 1150px){
+    .header__top {
+        position: relative;
+    }
+    .logo {
+        margin-right: auto;
+    }
+    .menu {
+        margin: 0;
+        position: absolute;
+        top: 112px;
+        left: -10px;
+        width: calc(100% + 20px);
+        max-width: calc(100% + 20px);
+        z-index: 2;
+        ul {
+            padding: 20px 0;
+            display: none;
+            background: rgba(255,174,174,0.85);;
+        }
+        li {
+            text-align: center;
+        }
+    }
+    .header__menu-btn {
+        display: block;
+        margin-left: 50px;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 1050px){
+    .header {
+        height: auto;
+    }
+    .header__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header__content-info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 1000px){
+    .production__slider-descr {
+        .array {
+            top: 150px;
+        }
+    }
+    .slider-descr__img {
+        margin-right: 25px;
+    }
+}
+
+
+@media(max-width: 710px){
+    .production__slider {
+        display: none;
+    }
+    .slider-descr__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .slider-descr__img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .slider-descr__info {
+        text-align: center;
+    }
+    .production__slider-descr {
+        .array {
+            top: 300px;
+        }
+    }
+}
+@media(max-width: 625px){
+    .header__top {
+        padding-top: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .logo {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .menu {
+        top: 155px;
+    }
+}
+
+@media(max-width: 490px){
+    .header__content-text {
+        margin-bottom: 25px;
+    }
+    .header__advantages-items {
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+    .header__advantages-item {
+        margin-bottom: 20px;
+        &.own-production,
+        &.new-clients,
+        &.quality {
+            width: 100%;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media(min-width: 1151px){
+    .menu {
+        ul {
+            display: flex !important;
+        }
+    }
+}
