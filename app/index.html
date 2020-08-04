@@ -20,8 +20,8 @@
           <ul>
             <li><a href="#production">Продукция</a></li>
             <li><a href="#indystry">Отраслевые решения</a></li>
-            <li><a href="#">Производство</a></li>
-            <li><a href="#">Преимущества</a></li>
+            <li><a href="#company">Производство</a></li>
+            <li><a href="#advantages">Преимущества</a></li>
           </ul>
         </nav>
         <div class="header__contact">
@@ -89,9 +89,9 @@
   </header>
   <main>
     <!-- start production -->
-    <section class="production" id="production">
+    <section class="production">
       <div class="container">
-        <div class="title">
+        <div class="title" id="production">
           НАША ПРОДУКЦИЯ
         </div>
         <div class="production__slider">
@@ -187,9 +187,9 @@
     </section>
     <!-- end production -->
     <!-- start indystry -->
-    <section class="indystry" id="indystry">
+    <section class="indystry">
       <div class="container">
-        <div class="title">
+        <div class="title" id="indystry">
           ОТРАСЛЕВЫЕ РЕШЕНИЯ
         </div>
         <div class="indystry__items">
@@ -355,7 +355,7 @@
     </section>
     <!-- end indystry -->
     <!-- start company -->
-    <section class="company">
+    <section class="company" id="company">
       <div class="container">
         <div class="title company__title">
           НАШЕ ПРОИЗВОДСТВО
@@ -462,7 +462,7 @@
     <!-- start advantages -->
     <section class="advantages">
       <div class="container">
-        <div class="title">
+        <div class="title" id="advantages">
           НАШИ ПРЕИМУЩЕСТВА
         </div>
         <div class="advantages__items">
@@ -518,7 +518,89 @@
       </div>
     </section>
     <!-- end advantages -->
+    <!-- start additional-products -->
+    <section class="additional-products">
+      <div class="container">
+        <form>
+          <div class="additional-products__inner">
+            <div class="additional-products__title">
+              ЧТО ВАМ ТАК ЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО?
+            </div>
+            <div class="additional-products__items">
+              <input type="checkbox" name="check1" id="check1">
+              <label for="check1">
+                <span class="additional-products__check"></span>
+                <span class="label__text">Пакеты для овощей</span>
+              </label>
+
+              <input type="checkbox" name="check2" id="check2">
+              <label for="check2">
+                <span class="additional-products__check"></span>
+                <span class="label__text">Пакеты для мусора</span>
+              </label>
+
+              <input type="checkbox" name="check3" id="check3">
+              <label for="check3">
+                <span class="additional-products__check"></span>
+                <span class="label__text">ПЭТ контейнеры для овощей</span>
+              </label>
+
+              <input type="checkbox" name="check4" id="check4">
+              <label for="check4">
+                <span class="additional-products__check"></span>
+                <span class="label__text">Пакеты с клапаном из CPP и LDPE</span>
+              </label>
+
+              <input type="checkbox" name="check5" id="check5">
+              <label for="check5">
+                <span class="additional-products__check"></span>
+                <span class="label__text">Пакеты - майка</span>
+              </label>
+
+              <input type="checkbox" name="check6" id="check6">
+              <label for="check6">
+                <span class="additional-products__check"></span>
+                <span class="label__text">Пленка BOPP</span>
+              </label>
+            </div>
+          </div>
+          <!-- специальное предложение -->
+          <div class="special-offer special-offer--position">
+            <h6 class="special-offer__title">
+              Получите расчет за 15 мин
+              и спецпредложение
+              на первый заказ!
+            </h6>
+            <div class="special-offer__text">
+              Количество спепредложений в рамках месяца ограничено
+            </div>
+            <label>Ваше имя*</label>
+            <input type="text" name="name" placeholder="Петров Петр" required>
+            <label>Ваш номер*</label>
+            <input type="tel" name="tel" placeholder="+7 (___) ___-__-__" required>
+            <button class="get-consultation" type="submit">Получить СПЕЦПРЕДЛОЖЕНИЕ</button>
+            <div class="special-offer__descr">
+              Мы гарантируем конфиденциальность данных
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- end additional-products -->
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__copy">
+        2018, Все названия, логотипы и товарные знаки являются 
+        собственностью корпорации ООО “Company name”
+      </div>
+      <div class="footer__text">
+        Посещение данного сайта и использование содержащейся на 
+        нем информации регулируется условиями нашего "Правового
+        положения". Ознакомьтесь с нашей "Политикой конфиденциальности".
+      </div>
+    </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>

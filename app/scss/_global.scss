@@ -1,0 +1,156 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body{
+    overflow-x: hidden;
+    position: relative;
+    font-family: Roboto;
+    color: #444444;
+}
+
+a {
+    font-family: Roboto;
+    color: #444444;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+// start special offer
+.special-offer {
+    margin-top: 11px;
+    width: 100%;
+    max-width: 430px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    padding: 49px 63px 20px;
+
+    label{
+        display: block;
+        font-size: 16px;
+        line-height: 25px;
+        color: #444444;
+    }
+
+    input,
+    button {
+        width: 100%;
+        outline: none;
+    }
+
+    input {
+        background: #EDEFF2;
+        box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.12);
+        border: none;
+        border-radius: 2px;
+        height: 30px;
+        padding: 0 10px;
+        margin-bottom: 20px;
+        color: #444;
+        
+        &::placeholder {
+            font-size: 12px;
+            line-height: 15px;
+            color: #939599;
+        }
+    }
+
+    button {
+        border: none;
+        padding: 19px 0 15px;
+        margin-top: 16px;
+        margin-bottom: 22px;
+        cursor: pointer;
+    }
+}
+.special-offer__title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 32px;
+    color: #444444;
+    margin-bottom: 30px;
+}
+.special-offer__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #80A2C5;
+    padding: 0 3px;
+    margin-bottom: 30px;
+}
+.special-offer__descr {
+    font-size: 10px;
+    line-height: 12px;
+    color: #BCBFC4;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2px;
+    padding-left: 26px;
+
+    &::before{
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        background-image: url(../img/lock.png);
+        background-repeat: no-repeat;
+        left: 28px;
+        top: -2px;
+    }
+}
+// end special offer
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #646566;
+    text-align: center;
+    padding-top: 30px;
+}
+.get-consultation {
+    background: $pink;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 0px 4px 16px rgba(0,0,0,0.46), 0px 2px 4px rgba(0,0,0,0.24);
+    }
+}
+
+.array {
+    fill: #ffaeae;
+    cursor: pointer;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    
+    &:active{
+        fill: $pink;
+    }
+}
+.array-prev {
+    left: 0;
+    z-index: 2;
+}
+.array-next {
+    right: 0;
+}

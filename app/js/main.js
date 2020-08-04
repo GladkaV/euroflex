@@ -1,6 +1,7 @@
 'use strict';
 
 $(function () {
+    // slider
     $('.production__slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -8,7 +9,7 @@ $(function () {
         focusOnSelect: true,
         asNavFor: '.production__slider-descr',
     });
-
+    // slider
     $('.production__slider-descr').slick({
         infinite: true,
         slidesToShow: 1,
@@ -18,6 +19,7 @@ $(function () {
         nextArrow: "<svg class='array array-next'><path d='M21 0C9.40275 0 0 9.40275 0 21C0 32.5972 9.40275 42 21 42C32.5972 42 42 32.5972 42 21C42 9.40275 32.5972 0 21 0ZM18.8685 33.25L15.75 30.1875L24.9375 21L15.75 11.8125L18.8685 8.75L31.0625 21L18.8685 33.25Z'/></svg>"
     });
 
+    // slider
     $('.company__slider').slick({
         infinite: true,
         slidesToShow: 5,
@@ -27,4 +29,17 @@ $(function () {
         nextArrow: "<svg class='array array-next'><path d='M21 0C9.40275 0 0 9.40275 0 21C0 32.5972 9.40275 42 21 42C32.5972 42 42 32.5972 42 21C42 9.40275 32.5972 0 21 0ZM18.8685 33.25L15.75 30.1875L24.9375 21L15.75 11.8125L18.8685 8.75L31.0625 21L18.8685 33.25Z'/></svg>"
     });
     
+    // form header
+    $('.special-offer form').on('submit', function (event) {
+        event.preventDefault();
+        //вывод отправляемых данных в консоль
+        console.log($(this).serialize());
+    });
+
+    // form  additional-products
+    $('.additional-products form').on('submit', function (event) {
+        event.preventDefault();
+        //вывод отправляемых данных в консоль
+        console.log($(this).serialize());
+    });
 });
