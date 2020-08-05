@@ -64,6 +64,21 @@ $(function () {
             },
         ]
     });
+
+    // indystry button hide
+    $('.indystry__btn-hide').on('click', function () {
+        $('.indystry__items').slideToggle();
+        $('.indystry__btn-hide').toggleClass('active');
+
+        // change text
+        let text = $('.indystry__btn-text').text();
+
+        if(text === 'скрыть'){
+            $('.indystry__btn-text').text('показать');
+        } else {
+            $('.indystry__btn-text').text('скрыть');
+        }
+    })
     
     // form header
     $('.special-offer form').on('submit', function (event) {

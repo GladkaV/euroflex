@@ -257,7 +257,6 @@
     margin-left: -2.5%;
     overflow: visible;
     opacity: 1;
-    transition: all .3s;
 }
 .indystry__item {
     width: 273px;
@@ -321,7 +320,11 @@
     padding-top: 21px;
 }
 .indystry__btn-hide {
+    border: none;
+    background: transparent;
     display: inline-block;
+    cursor: pointer;
+    outline: none;
     margin: 10px 0 56px;
     svg {
         width: 46px;
@@ -346,16 +349,8 @@
         padding: 19px 28px 15px;
     }
 }
-.indystry.indystry--active {
-    .indystry__items {
-        padding-top: 0;
-        height: 30px;
-        overflow: hidden;
-        opacity: 0;
-    }
-    .indystry__btn-hide svg {
-        transform: rotate(180deg);
-    }
+.indystry__btn-hide.active svg {
+    transform: rotate(180deg);
 }
 // end indystry
 // start company
