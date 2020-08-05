@@ -115,6 +115,15 @@ a {
     .special-offer {
         padding: 29px 30px 20px;
     }
+    .special-offer button {
+        padding: 19px 10px 15px;
+    }
+    .special-offer__descr {
+        text-align: left;
+        &::before {
+            left: 0;
+        }
+    }
 }
 // end special offer
 .title {

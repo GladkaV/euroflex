@@ -26,6 +26,7 @@
         }
         li {
             text-align: center;
+            margin-bottom: 10px;
         }
     }
     .header__menu-btn {
@@ -33,8 +34,30 @@
         margin-left: 50px;
         margin-right: 10px;
     }
+    .indystry__item {
+        flex-basis: (30% - 2.5%);
+    }
+    .company__slider {
+        padding: 0 50px;
+    }
 }
-
+@media(max-width: 1100px){
+    .additional-products form {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .additional-products__inner {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .additional-products__title {
+        max-width: 100%;
+        text-align: center;
+    }
+    .additional-products__items {
+        margin: 0 auto;        
+    }
+}
 @media(max-width: 1050px){
     .header {
         height: auto;
@@ -47,6 +70,13 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+    .company__advantages {
+        flex-wrap: wrap;
+    }
+    .company__advantages-item {
+        width: 100%;
+        max-width: 47%;
+    }
 }
 @media(max-width: 1000px){
     .production__slider-descr {
@@ -56,6 +86,14 @@
     }
     .slider-descr__img {
         margin-right: 25px;
+    }
+    .advantages__item {
+        width: 33.333%;
+    }
+}
+@media(max-width: 900px){
+    .indystry__item {
+        flex-basis: (45% - 2.5%);
     }
 }
 
@@ -80,7 +118,22 @@
             top: 300px;
         }
     }
+    .advantages__item {
+        width: 50%;
+    }
 }
+
+@media(max-width: 650px){
+    .indystry__item {
+        flex-basis: (100% - 2.5%);
+    }
+    .additional-products__items label {
+        width: 100%;
+        margin-left: 5%;
+        display: flex;
+    }  
+}
+
 @media(max-width: 625px){
     .header__top {
         padding-top: 15px;
@@ -94,6 +147,11 @@
     }
     .menu {
         top: 155px;
+    }
+    .company .slick-dots {
+        padding-right: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -113,7 +171,18 @@
             width: 100%;
         }
     }
-    
+    .advantages-item__num {
+        text-align: center;
+    }
+    .company__advantages-item {
+        max-width: 100%;
+    }
+}
+@media(max-width: 460px){
+    .advantages__item {
+        width: 100%;
+        padding: 0 5%;
+    }
 }
 
 
