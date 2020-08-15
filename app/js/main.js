@@ -80,15 +80,8 @@ $(function () {
         }
     })
     
-    // form header
-    $('.special-offer form').on('submit', function (event) {
-        event.preventDefault();
-        //вывод отправляемых данных в консоль
-        console.log($(this).serialize());
-    });
-
-    // form  additional-products
-    $('.additional-products form').on('submit', function (event) {
+    // form
+    $('form').on('submit', function (event) {
         event.preventDefault();
         //вывод отправляемых данных в консоль
         console.log($(this).serialize());

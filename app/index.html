@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Еврофлекс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -13,26 +15,24 @@
   <header class="header">
     <div class="container">
       <div class="header__top">
-        <div class="logo">
-          <img src="./img/logo.svg" alt="">
-        </div>
+        <img class="logo" src="./img/logo.svg" alt="logo">
         <nav class="menu">
-          <ul>
-            <li><a href="#production">Продукция</a></li>
-            <li><a href="#indystry">Отраслевые решения</a></li>
-            <li><a href="#company">Производство</a></li>
-            <li><a href="#advantages">Преимущества</a></li>
+          <ul class="menu__list">
+            <li class="menu__list-item"><a href="#production">Продукция</a></li>
+            <li class="menu__list-item"><a href="#indystry">Отраслевые решения</a></li>
+            <li class="menu__list-item"><a href="#company">Производство</a></li>
+            <li class="menu__list-item"><a href="#advantages">Преимущества</a></li>
           </ul>
         </nav>
         <div class="header__contact">
           <a class="contact__tel" href="tel:+74951234567">+7 (495) 123-45-67</a>
-          <a class="contact__back-all" href="#">Обратный звонок</a>
+          <button class="contact__back-all">Обратный звонок</button>
         </div>
-        <div class="header__menu-btn">
+        <button class="header__menu-btn">
           <div></div>
           <div></div>
           <div></div>
-        </div>
+        </button>
       </div>
       <div class="header__content">
         <div class="header__content-info">
@@ -45,21 +45,21 @@
             </div>
             <div class="header__advantages-items">
               <div class="header__advantages-item own-production">
-                <img src="./img/advantages-1.png" alt="">
+                <img src="./img/advantages-1.png" alt="production">
                 <div class="advantages-item__text">
                   СОБСТВЕННОЕ
                   ПРОИЗВОДСТВО
                 </div>
               </div>
               <div class="header__advantages-item new-clients">
-                <img src="./img/advantages-2.png" alt="">
+                <img src="./img/advantages-2.png" alt="conditions">
                 <div class="advantages-item__text">
                   СУПЕР-УСЛОВИЯ
                   НОВЫХ КЛИЕНТОВ
                 </div>
               </div>
               <div class="header__advantages-item quality">
-                <img src="./img/advantages-3.png" alt="">
+                <img src="./img/advantages-3.png" alt="quality">
                 <div class="advantages-item__text">
                   КАЧЕСТВО, СКЛАД,
                   СРОКИ ПРОИЗВОДСТВА
@@ -101,19 +101,19 @@
         </div>
         <div class="production__slider">
           <div class="production__slider-item">
-            <img src="./img/production/item-1.svg" alt="">
+            <img src="./img/production/item-1.svg" alt="canvas">
             <div class="slider-item__name">
               Полотно LINEAR
             </div>
           </div>
           <div class="production__slider-item">
-            <img src="./img/production/item-2.svg" alt="">
+            <img src="./img/production/item-2.svg" alt="canvas">
             <div class="slider-item__name">
               Полотно ZIG-ZAG
             </div>
           </div>
           <div class="production__slider-item">
-            <img src="./img/production/item-3.svg" alt="">
+            <img src="./img/production/item-3.svg" alt="canvas">
             <div class="slider-item__name">
               Полотно CUSTOM
             </div>
@@ -123,9 +123,9 @@
           <div class="slider-descr__item">
             <div class="slider-descr__inner">
               <div class="slider-descr__img wow fadeInLeft">
-                <img src="./img/production/item-descr1.png" alt="">
+                <img src="./img/production/item-descr1.png" alt="canvas">
               </div>
-              <div class="slider-descr__info">
+              <article class="slider-descr__info">
                 <div class="slider-descr__title">
                   Полотно LINEAR
                 </div>
@@ -139,13 +139,13 @@
                   мм до 50 мм.
                 </div>
                 <a class="slider-descr__btn" href="#">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a>
-              </div>
+              </article>
             </div>
           </div>
           <div class="slider-descr__item">
             <div class="slider-descr__inner">
               <div class="slider-descr__img">
-                <img src="./img/production/item-descr1.png" alt="">
+                <img src="./img/production/item-descr1.png" alt="canvas">
               </div>
               <div class="slider-descr__info">
                 <div class="slider-descr__title">
@@ -167,7 +167,7 @@
           <div class="slider-descr__item">
             <div class="slider-descr__inner">
               <div class="slider-descr__img">
-                <img src="./img/production/item-descr1.png" alt="">
+                <img src="./img/production/item-descr1.png" alt="canvas">
               </div>
               <div class="slider-descr__info">
                 <div class="slider-descr__title">
@@ -198,7 +198,7 @@
           ОТРАСЛЕВЫЕ РЕШЕНИЯ
         </div>
         <div class="indystry__items">
-          <div class="indystry__item" style="background-image: url(./img/indystry/indystry-1.png)">
+          <article class="indystry__item" style="background-image: url(./img/indystry/indystry-1.png)">
             <div class="indystry__item-title">
               Пленка для упаковки овощей и фруктов
             </div>
@@ -214,8 +214,8 @@
                 Автоматические линии фасовки
               </li>
             </ul>
-          </div>
-          <div class="indystry__item" style="background-image: url(./img/indystry/indystry-2.png)">
+          </article>
+          <article class="indystry__item" style="background-image: url(./img/indystry/indystry-2.png)">
             <div class="indystry__item-title">
               Пакеты для упаковки овощей и фруктов
             </div>
@@ -232,8 +232,8 @@
                 Есть готовая линейка пакетов, всегда в наличии на складе
               </li>
             </ul>
-          </div>
-          <div class="indystry__item" style="background-image: url(./img/indystry/indystry-3.png)">
+          </article>
+          <article class="indystry__item" style="background-image: url(./img/indystry/indystry-3.png)">
             <div class="indystry__item-title">
               Пленка для упаковки цветов и растений
             </div>
@@ -249,8 +249,8 @@
                 Возможно программируемое расположение отверстий
               </li>
             </ul>
-          </div>
-          <div class="indystry__item" style="background-image: url(./img/indystry/indystry-4.png)">
+          </article>
+          <article class="indystry__item" style="background-image: url(./img/indystry/indystry-4.png)">
             <div class="indystry__item-title">
               Пленка для мульчирования
             </div>
@@ -259,8 +259,8 @@
                 Пленка для прикрытия почвы с отверстиями для
                 точной рассадки растений <span>30 мм – 50 мм</span>
             </ul>
-          </div>
-          <div class="indystry__item" style="background-image: url(./img/indystry/indystry-5.png)">
+          </article>
+          <article class="indystry__item" style="background-image: url(./img/indystry/indystry-5.png)">
             <div class="indystry__item-title">
               Пленка для грибов
             </div>
@@ -273,8 +273,8 @@
                 Диаметр отверстий <span>от 6 до 50 мм</span>
               </li>
             </ul>
-          </div>
-          <div class="indystry__item" style="background-image: url(./img/indystry/indystry-6.png)">
+          </article>
+          <article class="indystry__item" style="background-image: url(./img/indystry/indystry-6.png)">
             <div class="indystry__item-title">
               Производство пленки
             </div>
@@ -286,8 +286,8 @@
                 Диаметр отверстий <span>от 6 до 8 мм</span>
               </li>
             </ul>
-          </div>
-          <div class="indystry__item" style="background-image: url(./img/indystry/indystry-7.png)">
+          </article>
+          <article class="indystry__item" style="background-image: url(./img/indystry/indystry-7.png)">
             <div class="indystry__item-title">
               Пакеты для игрушек
             </div>
@@ -299,8 +299,8 @@
                 Отверстия <span>6 мм</span>
               </li>
             </ul>
-          </div>
-          <div class="indystry__item" style="background-image: url(./img/indystry/indystry-8.png)">
+          </article>
+          <article class="indystry__item" style="background-image: url(./img/indystry/indystry-8.png)">
             <div class="indystry__item-title">
               Пакеты для ракушек
             </div>
@@ -312,8 +312,8 @@
                 Диаметр отверстий <span>от 6 мм</span>
               </li>
             </ul>
-          </div>
-          <div class="indystry__item" style="background-image: url(./img/indystry/indystry-9.png)">
+          </article>
+          <article class="indystry__item" style="background-image: url(./img/indystry/indystry-9.png)">
             <div class="indystry__item-title">
               Пакеты для винограда
             </div>
@@ -326,8 +326,8 @@
                 Отверстия <span>6 или 8 мм</span>
               </li>
             </ul>
-          </div>
-          <div class="indystry__item" style="background-image: url(./img/indystry/indystry-10.png)">
+          </article>
+          <article class="indystry__item" style="background-image: url(./img/indystry/indystry-10.png)">
             <div class="indystry__item-title">
               Упаковочная бумага с отверстиями
             </div>
@@ -336,7 +336,7 @@
                 Диаметр отверстий <span>от 6 до 50 мм</span>
               </li>
             </ul>
-          </div>
+          </article>
         </div>
         <div class="indystry__btn">
           <div>
@@ -379,8 +379,8 @@
             оптовые
             компании, фермерские хозяйства и т.д.
           </p>
+          <h6 class="company__descr-title">Еврофлекс - это:</h6>
           <ul class="company__descr-list">
-            <span>Еврофлекс - это:</span>
             <li>
               — Непрерывное расширение спектра выпускаемой продукции и географии поставок
             </li>
@@ -443,22 +443,34 @@
         </div>
         <div class="company__slider">
           <div class="company__slider-img">
-            <div style="background-image: url(./img/company/company-1.png);"></div>
+            <div class="company__wrapper-img">
+              <img src="./img/company/company-1.png" alt="production">
+            </div>
           </div>
           <div class="company__slider-img">
-            <div style="background-image: url(./img/company/company-2.png);"></div>
+            <div class="company__wrapper-img">
+              <img src="./img/company/company-2.png" alt="production">
+            </div>
           </div>
           <div class="company__slider-img">
-            <div style="background-image: url(./img/company/company-3.png);"></div>
+            <div class="company__wrapper-img">
+              <img src="./img/company/company-3.png" alt="production">
+            </div>
           </div>
           <div class="company__slider-img">
-            <div style="background-image: url(./img/company/company-4.png);"></div>
+            <div class="company__wrapper-img">
+              <img src="./img/company/company-4.png" alt="production">
+            </div>
           </div>
           <div class="company__slider-img">
-            <div style="background-image: url(./img/company/company-5.png);"></div>
+            <div class="company__wrapper-img">
+              <img src="./img/company/company-5.png" alt="production">
+            </div>
           </div>
           <div class="company__slider-img">
-            <div style="background-image: url(./img/company/company-3.png);"></div>
+            <div class="company__wrapper-img">
+              <img src="./img/company/company-3.png" alt="production">
+            </div>
           </div>
         </div>
       </div>
@@ -472,49 +484,49 @@
         </div>
         <div class="advantages__items">
           <div class="advantages__item">
-            <img src="./img/advantages/advantages-1.png" alt="">
+            <div class="advantages__item-icon"></div>
             <div class="advantages__item-text">
               супер-условия </br> по сотрудничеству
             </div>
           </div>
           <div class="advantages__item">
-            <img src="./img/advantages/advantages-2.png" alt="">
+            <div class="advantages__item-icon" style="background-position: -91px -0;"></div>
             <div class="advantages__item-text">
               отличные цены
             </div>
           </div>
           <div class="advantages__item">
-            <img src="./img/advantages/advantages-3.png" alt="">
+            <div class="advantages__item-icon" style="background-position: -0 -90px;"></div>
             <div class="advantages__item-text">
               программируемое расположение отверстий
             </div>
           </div>
           <div class="advantages__item">
-            <img src="./img/advantages/advantages-4.png" alt="">
+            <div class="advantages__item-icon" style="background-position: -0 -180px;"></div>
             <div class="advantages__item-text">
               диаметр отверстий </br> от 6 мм до 50 мм
             </div>
           </div>
           <div class="advantages__item">
-            <img src="./img/advantages/advantages-5.png" alt="">
+            <div class="advantages__item-icon" style="background-position: -91px -90px;"></div>
             <div class="advantages__item-text">
               возможность нанесения </br> 12 отверстий в ряд
             </div>
           </div>
           <div class="advantages__item">
-            <img src="./img/advantages/advantages-6.png" alt="">
+            <div class="advantages__item-icon" style="background-position: -182px -0;"></div>
             <div class="advantages__item-text">
               нанесение печати </br> до 8 цветов
             </div>
           </div>
           <div class="advantages__item">
-            <img src="./img/advantages/advantages-7.png" alt="">
+            <div class="advantages__item-icon" style="background-position: -182px -90px;"></div>
             <div class="advantages__item-text">
               ширина материала </br> от 100 мм до 1350 мм
             </div>
           </div>
           <div class="advantages__item">
-            <img src="./img/advantages/advantages-8.png" alt="">
+            <div class="advantages__item-icon" style="background-position: -90px -180px;"></div>
             <div class="advantages__item-text">
               доставка по всей РФ
             </div>
@@ -596,11 +608,11 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__copy">
-        2018, Все названия, логотипы и товарные знаки являются 
+        2018, Все названия, логотипы и товарные знаки являются
         собственностью корпорации ООО “Company name”
       </div>
       <div class="footer__text">
-        Посещение данного сайта и использование содержащейся на 
+        Посещение данного сайта и использование содержащейся на
         нем информации регулируется условиями нашего "Правового
         положения". Ознакомьтесь с нашей "Политикой конфиденциальности".
       </div>

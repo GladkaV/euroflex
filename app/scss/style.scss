@@ -19,23 +19,21 @@
     justify-content: space-between;
     align-items: center;
 }
-.logo {
-    padding-top: 5px;
-}
 .menu {
     margin: 0 73px 0 auto;
     width: 100%;
     max-width: 550px;
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a{
+}
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__list-item {
+    a {
         text-decoration: none;
         font-size: 16px;
         line-height: 25px;
@@ -50,9 +48,12 @@
     }
 }
 .header__menu-btn {
+    background: transparent;
+    border: none;
     cursor: pointer;
     width: 40px;
     display: none;
+    outline: none;
 
     div{
         height: 3px;
@@ -88,6 +89,9 @@
     margin-bottom: 10px;
 }
 .contact__back-all {
+    cursor: pointer;
+    outline: none;
+    border: none;
     display: inline-block;
     margin-left: 9px;
     padding: 4px 15px;
@@ -374,18 +378,19 @@
     line-height: 25px;
     margin-bottom: 15px;
 }
+.company__descr-title {
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 25px;
+}
 .company__descr-list {
     padding: 5px 0 0;
     margin: 0 0 13px;
     list-style: none;
     font-size: 16px;
     line-height: 25px;
-    
-    span {
-        display: inline-block;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
 
     li {
         margin-bottom: 5px;
@@ -467,13 +472,14 @@
         outline: none;
     }
 }
-.company__slider-img div{
+.company__wrapper-img{
     width: 180px;
     height: 107px;
     margin: 0 auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+    img {
+        height: 100%;
+    }
 }
 // end company
 // start advantages
@@ -489,10 +495,14 @@
     text-align: center;
     width: 25%;
     margin-bottom: 80px;
-
-    img {
-        margin-bottom: 16px;
-    }
+}
+.advantages__item-icon {
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 16px;
+    background-image: url(../img/sprites.png);
+    background-repeat: no-repeat;
 }
 .advantages__item-text {
     font-size: 16px;
