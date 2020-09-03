@@ -5,24 +5,36 @@
 }
 
 @media(max-width: 1150px){
-    .header__top {
+    .header__top-inner {
         position: relative;
     }
-    .logo {
+    .wrapper__logo {
         margin-right: auto;
     }
     .menu {
         margin: 0;
         position: absolute;
-        top: 112px;
+        top: 0;
         left: -10px;
+        z-index: 1;
+        transform: translateX(-105%);
+        transition: all .5s;
+        min-height: 100vh;
+        padding-top: 80px;
+        background-color: #ffaeae;
+        box-shadow: -5px 5px 10px 5px #fff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
         width: calc(100% + 20px);
         max-width: calc(100% + 20px);
-        z-index: 2;
+
+        &.active {
+            transform: translateX(0%);
+        }
         ul {
-            padding: 20px 0;
-            display: none;
-            background: rgba(255,174,174,0.85);;
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
         }
         li {
             text-align: center;
@@ -62,7 +74,7 @@
     .header {
         height: auto;
     }
-    .header__content {
+    .header__content-inner {
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -135,18 +147,16 @@
 }
 
 @media(max-width: 625px){
-    .header__top {
+    .header__top-inner {
         padding-top: 15px;
         flex-wrap: wrap;
         margin-bottom: 20px;
     }
-    .logo {
+    .wrapper__logo {
         width: 100%;
-        margin-bottom: 20px;
-        text-align: center;
     }
-    .menu {
-        top: 190px;
+    .logo {
+        margin-bottom: 20px;
     }
     .company .slick-dots {
         padding-right: 0;
@@ -176,9 +186,6 @@
     }
     .company__advantages-item {
         max-width: 100%;
-    }
-    .menu {
-        top: 160px;
     }
 }
 @media(max-width: 460px){

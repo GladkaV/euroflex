@@ -13,7 +13,7 @@
     height: 608px;
     padding-bottom: 15px;
 }
-.header__top {
+.header__top-inner {
     min-height: 112px;
     display: flex;
     justify-content: space-between;
@@ -54,17 +54,21 @@
     width: 40px;
     display: none;
     outline: none;
+    z-index: 2;
 
     div{
         height: 3px;
         background-color: $pink;
         margin-bottom: 7px;
         transition: all .3s;
+        width: 100%;
+        margin-left: auto;
     }
 }
 .header__menu-btn.active {
     div {
         transition: all .3s;
+        background-color: #80A2C5;
     }
     div:first-child {
         transform: rotate(-45deg) translateY(14px);
@@ -106,7 +110,7 @@
         box-shadow: 0px 4px 16px rgba(0,0,0,0.46), 0px 2px 4px rgba(0,0,0,0.24);
     }
 }
-.header__content {
+.header__content-inner {
     display: flex;
     justify-content: space-between;
 }

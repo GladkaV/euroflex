@@ -7,8 +7,13 @@ $(function () {
 
     // menu btn
     $('.header__menu-btn').on('click', function () {
-        $('.menu ul').slideToggle();
         $('.header__menu-btn').toggleClass('active');
+        $('.menu').toggleClass('active');
+    })
+
+    $('.menu__list-item a').on('click', function () {
+        $('.menu').removeClass('active');
+        $('.header__menu-btn').removeClass('active');
     })
 
     // slider
