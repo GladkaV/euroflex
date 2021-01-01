@@ -91,4 +91,7 @@ $(function () {
         //вывод отправляемых данных в консоль
         console.log($(this).serialize());
     });
+
+    // mask phone
+    $('.special-offer input[type=tel]').mask("+7 (999) 999 99 99");
 });
