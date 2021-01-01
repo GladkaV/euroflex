@@ -200,6 +200,7 @@ a {
 
 // START HEADER
 .header {
+    background-color: lightgrey;
     background-image: url(../img/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1011,44 +1012,50 @@ a {
         flex-direction: column;
     }
     
-    &>div{
+    & > div{
         width: 50%;
         margin-bottom: 51px;
-        cursor: pointer;
 
         @media(max-width: 440px){
             width: 100%;
-            text-align: center;
         }
     }
+
+     label {
+        cursor: pointer;
+        display: flex;
+        color: #EDEFF2;
+    }
+
     input {
         display: none;
     }
-    input:checked + label{
-        .additional-products__check {
-            background-image: url(../img/check.svg);
-        }
-        .label__text {
-            text-decoration: none;
-        }
+
+    input:checked + label {
+        color: #FFAEAE;
+    }
+
+    input:checked + label .additional-products__check {
+        background-size: cover;
     }
 }
 
 .label__text {
     font-size: 16px;
     line-height: 23px;
+    display: block;
     text-decoration-line: underline;
-    color: #EDEFF2;
     padding-right: 15px;
 }
 
 .additional-products__check {
-    display: inline-block;
+    display: block;
     flex-shrink: 0;
     width: 18px;
     height: 18px;
-    background-size: cover;
+    background-size: 0;
     background-color: #FFFFFF;
+    background-image: url(../img/check.svg);
     border: 1px solid #FFAEAE;
     box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
