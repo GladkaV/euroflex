@@ -5,6 +5,19 @@ $(function () {
         offset: 150,  
     });
 
+    // плавный скрол
+    $('a').on('click', function () {
+        var el = $(this);
+        var dest = el.attr('href');
+        if (dest !== undefined && dest !== '') {
+            $('html').animate({
+                scrollTop: $(dest).offset().top
+            }, 500
+            );
+        }
+        return false;
+    });
+
     // menu btn
     $('.header__menu-btn').on('click', function () {
         $('.header__menu-btn').toggleClass('active');
